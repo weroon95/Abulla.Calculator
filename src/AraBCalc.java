@@ -1,6 +1,6 @@
 class AraBCalc {
 
-    public static void Arab(String str4) {
+    public static String Arab(String str4) {
         int result = 0;
 
         String[] vod = str4.split("[+\\-*/]");
@@ -29,40 +29,33 @@ class AraBCalc {
             switch (simb[1]) {
                 case '/':
                     result = A / B;
-                    System.out.println(result);
                     break;
                 case '*':
                     result = A * B;
-                    System.out.println(result);
                     break;
                 case '+':
                     result = A + B;
-                    System.out.println(result);
                     break;
                 case '-':
                     result = A - B;
-                    System.out.println(result);
                     break;
             }
         } else {
             switch (simb[2]) {
                 case '/':
                     result = A / B;
-                    System.out.println(result);
                     break;
                 case '*':
                     result = A * B;
-                    System.out.println(result);
                     break;
                 case '+':
                     result = A + B;
-                    System.out.println(result);
                     break;
                 case '-':
                     result = A - B;
-                    System.out.println(result);
                     break;
             }
         }
+        return String.valueOf(result);
     }
 }

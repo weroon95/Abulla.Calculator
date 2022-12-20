@@ -1,5 +1,5 @@
 public class Rim {
-    public static void RimCalc(String str) {
+    public static String RimCalc(String str) {
 
 
         String[] vod = str.split("[+\\-/*]");
@@ -39,7 +39,7 @@ public class Rim {
                 res = String.valueOf(s);
             }
         }
-        System.out.println(res);
+        return res;
 
     }
 

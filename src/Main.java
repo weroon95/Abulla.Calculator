@@ -1,19 +1,14 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-
-        while (true) {
-            Scanner scanner = new Scanner(System.in);
-            String str = scanner.nextLine();
-            String[] vod = str.split("[+\\-*/]");
+        public static String calc(String input) {
+            String[] vod = input.split("[+\\-*/]");
             try {
                 int i = Integer.parseInt(vod[0]);
                 int b = Integer.parseInt(vod[1]);
-                AraBCalc.Arab(str);
+                return AraBCalc.Arab(input);
             } catch (NumberFormatException exception) {
-                Rim.RimCalc(str);
+                return Rim.RimCalc(input);
             }
-        }
     }
 }
